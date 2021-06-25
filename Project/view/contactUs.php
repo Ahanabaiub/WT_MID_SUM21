@@ -127,6 +127,9 @@
     <title>Contact Us</title>
 </head>
 <body>
+    <h1>RDBMS College Bangladesh</h1>
+    <a href="homePage.php">Home</a>
+    <hr>
     <h1>Please fill the below information for contract with us.<h1>
     <form action="" method="post">
         <fieldset>
@@ -177,6 +180,6 @@
                 </table>    
         </fieldset>
     </form>
-      
+    <p><b>© 2017 - RDBMS College, Dhaka.</b></p>  
 </body>
 </html>

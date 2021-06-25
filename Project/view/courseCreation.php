@@ -52,9 +52,9 @@
     <title>Subject creation</title>
 </head>
 <body>
-<h1>Fillup the Subject information<h1>
     <form action="" method="post">
         <fieldset>
+        <h1>Fillup the Subject information<h1>
                 <table>
                     <tr>
                         <td><b>Name :</b></td>
