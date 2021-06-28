@@ -18,7 +18,6 @@
                 <li><a href="homePage.php">Home</a></li>
                 <li><a href="">Administration</a></li>
                 <li><a href="">Registration</a></li>
-                <li><a href="contactUs.php">Contact Us</a></li>
             </ul>
             <hr>
     <form action="" method="post">

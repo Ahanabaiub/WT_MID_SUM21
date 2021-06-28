@@ -4,16 +4,16 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>RDBMS College Bangladesh</H1>
+    <h1>RDBMS College Bangladesh</h1>
     <ul>
         <li><a href="aboutUs.php">About us</a></li>
-        <li><a href="">Administration</a></li>
-        <li><a href="">Registration</a></li>
+        <li><a href="administration.php">Administration</a></li>
+        <li><a href="registration.php">Registration</a></li>
         <li><a href="contactUs.php">Contact Us</a></li>
         <li><a href="login.php">Login</a></li>
     </ul>
     <hr>
-    <img src="">
+    <img src="./img/clgImg.jpg">
     <h2>Welcome to RDBMS College</h2>
     <p>
         RDBMS is one of the most prestigious and important educational institutions in Dhaka. It is located in the heart of the Dhaka Cantonment,

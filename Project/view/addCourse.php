@@ -5,14 +5,16 @@
     $code = "";
     $err_code = "";
 
-    $department = "";
-    $err_department = "";
+    $department="";
+	$err_department="";
 
     $description = "";
     $err_description = "";
 
     $createDate = "";
     $hasError = false;
+
+    $departments = array("Science","Commerce","Arts");
 
     if(isset($_POST["submit"])){
         if(empty($_POST["subject_name"])){
@@ -31,6 +33,15 @@
         else{
             $code = htmlspecialchars($_POST["code"]);
         }
+
+        //Departments validation
+        if (!isset($_POST["department"])){
+			$hasError = true;
+			$err_department="Department Required.";
+		}
+		else{
+			$department = $_POST["department"];
+		}
 
         if(empty($_POST["description"])){
             $hasError = true;
@@ -52,40 +63,47 @@
     <title>Subject creation</title>
 </head>
 <body>
+    <a href="admindash.php">DashBord</a>
+    <br>
     <form action="" method="post">
         <fieldset>
-        <h1>Fillup the Subject information<h1>
+        <h1>Fillup the Subject information</h1>
                 <table>
                     <tr>
-                        <td><b>Name :</b></td>
-                        <td><input type="text" name="subject_name" value="<?php echo $subject_name; ?>"></td>
+                        <td>Name</td>
+                        <td>: <input type="text" name="subject_name" value="<?php echo $subject_name; ?>"></td>
                         <td><span> <?php echo $err_subject; ?></span></td>
                     </tr>
                     <tr>
-                        <td><b>Code :</b></td>
-                        <td><input type="text" name="code" value="<?php echo $code; ?>"></td>
+                        <td>Code</td>
+                        <td>: <input type="text" name="code" value="<?php echo $code; ?>"></td>
                         <td><span> <?php echo $err_code; ?></span></td>
                     </tr>
                     <tr>
-                        <td><b>Department :</b></td>
-                        <td><input type="text" name="department" value="<?php echo $department; ?>"></td>
-                        <td><span><?php echo $err_department; ?> </span></td>
-                    </tr>
+                        <td>Department</td>
+                        <td>: <select name="department">
+                            <option disabled selected>--Select Department--</option>
+                            <?php
+                                foreach($departments as $d){
+                                    if($d == $department) 
+                                        echo "<option selected>$d</option>";
+                                    else
+                                        echo "<option>$d</option>";
+                                }
+                            ?>
+                            </select>
+                        </td>
+                        <td><span> <?php echo $err_department;?> </span></td>
+				    </tr>	
                     <tr>
-                        <td><b>Created at :</b></td>
-                        <td><input type="text" name="createDate" value="<?php echo $createDate; ?>"></td>
+                        <td>Created at</td>
+                        <td>: <input type="text" name="createDate" value="<?php echo $createDate; ?>"></td>
                         <td><span></span></td>
                     </tr>
-                    <!-- <tr>
-                        <td><b>Last Update :</b></td>
-                        <td>
-                            <input type="text" name="lastUpdate" value="<?php echo $lastUpdate; ?>">
-                        </td>
-                        <td><span> </span></td>
-                    </tr> -->
+    
                     <tr>
-                        <td><b>Description :</b></td>
-                        <td><textarea name="description"><?php echo $description; ?></textarea></td>
+                        <td>Description</td>
+                        <td>: <textarea name="description"><?php echo $description; ?></textarea></td>
                         <td><span><?php echo $err_description; ?> </span></td>
                     </tr>
                     <tr>

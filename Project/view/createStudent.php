@@ -247,6 +247,8 @@
     <title>Student Creation</title>
 </head>
 <body>
+    <a href="admindash.php">DashBord</a>
+    <br>
 
     <form action="" method="post">
         <fieldset>
