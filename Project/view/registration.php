@@ -1,4 +1,6 @@
 <?php
+
+    //Global Variables
     $first_name = "";
     $err_fname = "";
 

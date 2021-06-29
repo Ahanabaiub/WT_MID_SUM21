@@ -13,7 +13,7 @@
         <li><a href="login.php">Login</a></li>
     </ul>
     <hr>
-    <img src="./img/clgImg.jpg">
+    <img src="img/clgImg.jpg">
     <h2>Welcome to RDBMS College</h2>
     <p>
         RDBMS is one of the most prestigious and important educational institutions in Dhaka. It is located in the heart of the Dhaka Cantonment,
