@@ -28,6 +28,9 @@
         <li><a href="examschedule_form.php">Schedule Exam</a></li>
         <li><a href="librarymodule_form.php">Library module</a></li>
         <li><a href="infoupdate_form.php">Info Update</a></li>
+        <li><a href="result_form.php">Result</a></li>
+        <li><a href="class schedule form.php">Schedule Class</a></li>
+        
     </ul>
     
 </body>
